@@ -1,0 +1,133 @@
+:root {
+  --color-green: #909be3;
+  --color-red: #d12828;
+  --color-button: #fdffff;
+  --color-black: #000;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #120913;
+  height: 98vh;
+  width: 98vw;
+  color: #ccdaed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#drum-machine {
+  background-color: #1e2034;
+  width: 600px;
+  height: 350px;
+  border: 5px solid #909be3;
+  border-radius: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
+  gap: 10px; /* Espaciado entre los elementos */
+}
+
+.info {
+  background-color: #909be3;
+  width: 160px;
+  height: 50px;
+  border-radius: 15px;
+}
+
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 180px;
+  justify-content: space-around;
+}
+
+h3 {
+  margin: 0;
+}
+
+
+.button {
+  background-color: #808080; /* Fondo gris */
+  color: black; /* Texto negro */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px; /* Tamaño del botón */
+  height: 100px; /* Tamaño del botón */
+  font-size: 24px; /* Tamaño de la letra */
+  border-radius: 5px; /* Bordes redondeados */
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Power button */
+.switch-button {
+  display: inline-block;
+}
+.switch-button .switch-button__checkbox {
+  display: none;
+}
+.switch-button .switch-button__label {
+  background-color: var(--color-red);
+  width: 3rem;
+  height: 1.3rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__label:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkbox:checked + .switch-button__label:before {
+  transform: translateX(2rem);
+}
+
+/* Bank button */
+.switch-buttont {
+  display: inline-block;
+}
+.switch-button .switch-button__checkboxt {
+  display: none;
+}
+.switch-button .switch-button__labelt {
+  background-color: var(--color-red);
+  width: 3rem;
+  height: 1.3rem;
+  border-radius: 3rem;
+  display: inline-block;
+  position: relative;
+}
+.switch-button .switch-button__labelt:before {
+  transition: .2s;
+  display: block;
+  position: absolute;
+  width: 1.3rem;
+  height: 1.3rem;
+  background-color: var(--color-button);
+  content: '';
+  border-radius: 50%;
+  box-shadow: inset 0px 0px 0px 1px var(--color-black);
+}
+.switch-button .switch-button__checkboxt:checked + .switch-button__labelt {
+  background-color: var(--color-green);
+}
+.switch-button .switch-button__checkboxt:checked + .switch-button__labelt:before {
+  transform: translateX(2rem);
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Drum Machine</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div id="drum-machine">
+      <div class="container">
+        <button class="button">Q</button>
+        <button class="button">W</button>
+        <button class="button">E</button>
+        <button class="button">A</button>
+        <button class="button">S</button>
+        <button class="button">D</button>
+        <button class="button">Z</button>
+        <button class="button">X</button>
+        <button class="button">C</button>
+      </div>
+      <div class="controls">
+        <div class="tb">
+          <h3>Power</h3>
+          <div class="switch-button">
+            <!-- Checkbox -->
+            <input
+              type="checkbox"
+              name="switch-button"
+              id="switch-label"
+              class="switch-button__checkbox"
+            />
+            <!-- Botón -->
+            <label for="switch-label" class="switch-button__label"></label>
+          </div>
+        </div>
+        <div class="volumen-slider">
+          <p class="info"></p>
+          <input type="range" name="volumen-slider" id="volumen-slider">
+        </div>
+        <div class="tb">
+          <h3>Bank</h3>
+          <div class="switch-button">
+            <!-- Checkbox -->
+            <input
+              type="checkbox"
+              name="switch-buttont"
+              id="switch-labelt"
+              class="switch-button__checkboxt"
+            />
+            <!-- Botón -->
+            <label for="switch-labelt" class="switch-button__labelt"></label>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
