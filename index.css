@@ -29,8 +29,8 @@ body {
 
 .container {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Tres columnas */
-  gap: 10px; /* Espaciado entre los elementos */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
 }
 
 .info {
@@ -38,14 +38,25 @@ body {
   width: 160px;
   height: 50px;
   border-radius: 15px;
+  font-size: 20px;
+  color: #120913;
+  text-align: center;
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
 }
-
 .controls {
   display: flex;
   flex-direction: column;
   align-items: center;
   height: 180px;
-  justify-content: space-around;
+  justify-content: center;
+}
+
+.volumen-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 h3 {
@@ -80,6 +91,7 @@ h3 {
   border-radius: 3rem;
   display: inline-block;
   position: relative;
+  cursor: pointer;
 }
 .switch-button .switch-button__label:before {
   transition: .2s;
@@ -98,6 +110,9 @@ h3 {
 .switch-button .switch-button__checkbox:checked + .switch-button__label:before {
   transform: translateX(2rem);
 }
+.switch-button__checkbox:hover {
+  cursor: pointer
+}
 
 /* Bank button */
 .switch-buttont {
@@ -113,6 +128,8 @@ h3 {
   border-radius: 3rem;
   display: inline-block;
   position: relative;
+  cursor: pointer;
+
 }
 .switch-button .switch-button__labelt:before {
   transition: .2s;
